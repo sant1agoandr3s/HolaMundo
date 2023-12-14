@@ -5,7 +5,10 @@ public class HolaMundo {
         System.out.println("Hola Mundo");
         Mensaje msg = new Mensaje();
         String nombre = msg.solicitaDatos("Escribe tu nombre: ");
-        msg.saludar(nombre);
+        String apellido = msg.solicitaDatos("Escribe tu apellido: ");
+        Persona p1 = new Persona(nombre,apellido);
+
+        msg.saludar(p1);
 
     }
 }
